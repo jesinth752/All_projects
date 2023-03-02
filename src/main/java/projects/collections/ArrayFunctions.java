@@ -1,11 +1,11 @@
 package projects.collections;
 
-import java.util.Scanner;
+
 import java.util.logging.Logger;
 
 class ArrayFunctions {
     int size;
-    int rec[];
+    int[] rec;
     private static final Logger log = Logger.getLogger("InfoLogging");
 
     StringBuilder show= new StringBuilder("");
@@ -33,7 +33,7 @@ class ArrayFunctions {
     void insert(int val)
     {
         increase();
-        Arr a1=new Arr(val);
+        new Arr(val);
     }
     void display()
     {
@@ -79,7 +79,8 @@ class ArrayFunctions {
     }
     void rotation(int k)
     {
-        int dum,j;
+        int dum;
+        int j;
         for(int i=0;i<k;i++)
         {
             dum=rec[0];

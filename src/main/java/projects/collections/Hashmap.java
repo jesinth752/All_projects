@@ -10,7 +10,7 @@ public class Hashmap {
     private static final Logger log = Logger.getLogger("InfoLogging");
     public static void runHashmap() {
         Scanner input=new Scanner(System.in);
-        HashMap<Integer,String> StudentDatabase= new HashMap<Integer,String>();
+        HashMap<Integer,String> studentdatabase= new HashMap<Integer,String>();
         int n;
 
         String name;
@@ -24,33 +24,34 @@ public class Hashmap {
 
             log.info("Enter Name");
             name= input.next();
-            StudentDatabase.put(id,name);
+            studentdatabase.put(id,name);
         }
-        String ret="HashMap:"+StudentDatabase;
+        String ret="HashMap:"+studentdatabase;
         log.info(ret);
         log.info("Enter key to delete");
         int k=input.nextInt();
-        StudentDatabase.remove(k);
-        String ar="After removing"+StudentDatabase;
+        studentdatabase.remove(k);
+        String ar="After removing"+studentdatabase;
         log.info(ar);
-        String sz="Size:"+StudentDatabase.size();
+        String sz="Size:"+studentdatabase.size();
         log.info(sz);
         log.info("Printing all keys in Hashmap");
-        for (Integer x : StudentDatabase.keySet()) {
+        for (Integer x : studentdatabase.keySet()) {
             String tyc=String.valueOf(x);
             log.info(tyc);
         }
 
         log.info("Printing all vaules in Hashmap");
-        for (String y: StudentDatabase.values()) {
+        for (String y: studentdatabase.values()) {
             log.info(y);
         }
         log.info("Printing all keys with vaules");
-        for (Map.Entry<Integer, String> z : StudentDatabase.entrySet()) {
-            log.info("key: " + z + " value: " + StudentDatabase.get(z));
+        for (Map.Entry<Integer, String> z : studentdatabase.entrySet()) {
+            String res="key: " + z + " value: " + studentdatabase.get(z);
+            log.info(res);
         }
-        StudentDatabase.clear();
-        String clr="After clearing "+StudentDatabase;
+        studentdatabase.clear();
+        String clr="After clearing "+studentdatabase;
         log.info(clr);
 
     }
