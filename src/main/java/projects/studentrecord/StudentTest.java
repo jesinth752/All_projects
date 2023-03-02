@@ -9,7 +9,7 @@ import java.util.logging.Logger;
 
 public class StudentTest extends Thread {
     public static final Logger log=Logger.getLogger("InfoLogging");
-    public static void Entry() {
+    public static void entry() {
         String n;
         int age;
         int k=0;

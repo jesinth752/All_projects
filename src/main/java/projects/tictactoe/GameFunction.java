@@ -17,12 +17,12 @@ class GameFunction
     int set=1;
     char blocknumber;
     char player;
-    StringBuilder row0=new StringBuilder("");
-    StringBuilder row1=new StringBuilder("");
-    StringBuilder row2=new StringBuilder("");
-    StringBuilder col0=new StringBuilder("");
-    StringBuilder col1=new StringBuilder("");
-    StringBuilder col2=new StringBuilder("");
+    StringBuilder row0=new StringBuilder();
+    StringBuilder row1=new StringBuilder();
+    StringBuilder row2=new StringBuilder();
+    StringBuilder col0=new StringBuilder();
+    StringBuilder col1=new StringBuilder();
+    StringBuilder col2=new StringBuilder();
 
 
 
@@ -33,9 +33,15 @@ class GameFunction
 
 
     String cc;
-    String plx="Player X Wins !";
-    String plo=" Player O Wins !";
-    String r0,r1,r2,d1,d2,c0,c1,c2;
+
+    String r0;
+    String r1;
+    String r2;
+    String d1;
+    String d2;
+    String c0;
+    String c1;
+    String c2;
 
 
     GameFunction() {
@@ -192,11 +198,11 @@ class GameFunction
     {
         if(k==1)
         {
-            System.out.println(" X wins");
+            log.info(" X wins");
         }
         else if(k==2)
         {
-            System.out.println(" O wins");
+            log.info(" O wins");
         }
     }
     void fillGameBoard()

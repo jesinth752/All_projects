@@ -3,7 +3,6 @@ import projects.bank.*;
 import projects.caluculator.*;
 import projects.contacts.*;
 import projects.filereader.*;
-import java.io.IOException;
 import projects.creditcard.*;
 import projects.coordinates.*;
 import projects.shapes.*;
@@ -46,7 +45,7 @@ public class Allprojects {
                     case 5:
                         try {
                             Coordinates.runapp();
-                            break;
+                            return;
                         } catch (Exception e) {
                             log.info("error");
                         }
@@ -57,7 +56,7 @@ public class Allprojects {
                     case 7:
                         try {
                             Filereader.runapp();
-                            break;
+                            return;
                         } catch (Exception e) {
                             log.info("error");
                         }
@@ -72,7 +71,7 @@ public class Allprojects {
                         Student.runRecord();
                         break;
                     case 11:
-                        StudentTest.Entry();
+                        StudentTest.entry();
                         break;
                     case 12:
                         TicTacToe.runGame();
