@@ -5,6 +5,8 @@ import java.util.logging.Logger;
 
 public class LinkedList {
     private static final Logger log = Logger.getLogger("InfoLogging");
+    private LinkedList()
+    {}
     public static void runLinkedList() {
         LinkedListFunctions list1=new LinkedListFunctions();
         Scanner sc=new Scanner(System.in);
