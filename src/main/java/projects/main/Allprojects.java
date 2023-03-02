@@ -45,10 +45,9 @@ public class Allprojects {
                     case 5:
                         try {
                             Coordinates.runapp();
-                            return;
                         } catch (Exception e) {
                             log.info("error");
-                        }
+                        }break;
 
                     case 6:
                         CreditCard.runapp();
@@ -56,10 +55,9 @@ public class Allprojects {
                     case 7:
                         try {
                             Filereader.runapp();
-                            return;
                         } catch (Exception e) {
                             log.info("error");
-                        }
+                        }break;
 
                     case 8:
                         Shapes.runapp();
