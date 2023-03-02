@@ -8,6 +8,9 @@ import java.util.logging.Logger;
 
 public class Hashmap {
     private static final Logger log = Logger.getLogger("InfoLogging");
+
+    private Hashmap()
+    {}
     public static void runHashmap() {
         Scanner input=new Scanner(System.in);
         HashMap<Integer,String> studentdatabase= new HashMap<Integer,String>();

@@ -9,6 +9,11 @@ import java.util.logging.Logger;
 
 public class StudentTest extends Thread {
     public static final Logger log=Logger.getLogger("InfoLogging");
+
+    private StudentTest()
+    {
+
+    }
     public static void entry() {
         String n;
         int age;

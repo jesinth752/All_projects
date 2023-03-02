@@ -4,6 +4,10 @@ import java.util.logging.Logger;
 
 public class Shapes {
     private static final Logger LOGGER = Logger.getLogger("InfoLogging");
+    private Shapes()
+    {
+
+    }
     public static void runapp() {
         LOGGER.info("Triangle");
         Triangle t1=new Triangle();

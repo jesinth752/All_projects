@@ -5,6 +5,11 @@ import java.util.logging.Logger;
 public class SelectOperations {
     private static final Logger log = Logger.getLogger("InfoLogging");
 
+    private SelectOperations()
+    {
+
+    }
+
     public static void select()
     {
         Scanner input=new Scanner(System.in);

@@ -6,6 +6,10 @@ import java.util.logging.Logger;
 
 public class Database {
     private static final Logger LOGGER = Logger.getLogger("InfoLogging");
+    private Database()
+    {
+
+    }
     public static void runDB() {
         Scanner input=new Scanner(System.in);
 

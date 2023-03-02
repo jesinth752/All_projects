@@ -5,6 +5,10 @@ import java.util.logging.Logger;
 
 public class  Student {
     public static final Logger LOGGER = Logger.getLogger("InfoLogging");
+    private Student()
+    {
+
+    }
     public static void runRecord() {
         Scanner input=new Scanner(System.in);
         GPA call=new GPA();

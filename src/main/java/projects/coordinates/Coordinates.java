@@ -6,6 +6,8 @@ import java.util.logging.Logger;
 public class Coordinates {
 
     private static final Logger LOGGER = Logger.getLogger("InfoLogging");
+    private Coordinates()
+    {}
     public static void runapp() throws CloneNotSupportedException{
         int x1;
         int y1;

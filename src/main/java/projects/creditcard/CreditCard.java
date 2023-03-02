@@ -7,6 +7,10 @@ import java.util.logging.Logger;
 public class CreditCard {
 
     private static final Logger LOGGER = Logger.getLogger("InfoLogging");
+    private CreditCard()
+    {
+
+    }
     public static void runapp() {
         Scanner input = new Scanner(System.in);
 

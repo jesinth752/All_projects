@@ -6,6 +6,9 @@ import java.util.logging.Logger;
 
 public class ArrayListOperations {
     private static final Logger log = Logger.getLogger("InfoLogging");
+
+    private ArrayListOperations()
+    {}
     public static void runArrayList() {
         Scanner input=new Scanner(System.in);
         ArrayList<Integer> list= new ArrayList<Integer>();

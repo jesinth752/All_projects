@@ -5,6 +5,9 @@ import java.util.logging.Logger;
 
 public class Array {
     private static final Logger log = Logger.getLogger("InfoLogging");
+
+    private Array()
+    {}
     public static void runArray() {
         Scanner input=new Scanner(System.in);
         int opt;

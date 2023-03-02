@@ -6,6 +6,10 @@ import java.util.logging.Logger;
 
 public class Hashset {
     private static final Logger log = Logger.getLogger("InfoLogging");
+    private Hashset()
+    {
+
+    }
     public static void runHashset() {
         Scanner input=new Scanner(System.in);
         HashSet<Integer> hs = new HashSet<Integer>();

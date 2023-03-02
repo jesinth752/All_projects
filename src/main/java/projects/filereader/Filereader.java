@@ -16,6 +16,10 @@ public class Filereader{
             print.append(sc.nextLine());
         }
     }
+    private Filereader()
+    {
+
+    }
     public static void runapp() throws IOException{
         String url = ""+"C:\\Users\\Tringapps-user9\\IdeaProjects\\filereader\\src\\main\\java\\org\\example\\text.txt";
         File f = new File(url);

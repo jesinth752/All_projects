@@ -6,6 +6,8 @@ import java.util.logging.Logger;
 
 public class Dairy {
     private static final Logger log = Logger.getLogger("InfoLogging");
+    private Dairy()
+    {}
     public static void runapp() {
         Scanner input=new Scanner(System.in);
         Contact c=new Contact();

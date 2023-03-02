@@ -7,6 +7,9 @@ import java.util.logging.Logger;
 
 public class Calc {
     private static final Logger log = Logger.getLogger("InfoLogging");
+
+    private Calc()
+    {}
     public static void runapp() {
 
 
